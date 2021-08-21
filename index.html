@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload Using PHP</title>
+    <!-- jQuery -->
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./NavBar/styles.css" />
+    
+    <style>
+        .container {
+            width: 100%;
+            /* margin-left: 30px; */
+            /* margin-right: 50px; */
+            overflow: hidden;
+            background: #FFF;
+            margin-top: 20px;
+
+        }
+        
+        .container ul {
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        
+        .container ul li {
+            float: left;
+            list-style: none;
+            width: 20%;
+            height: 250px;
+            background: #bcbcc2;
+            /* background-image: url("http://134.208.3.125/purePHP/uploadimage/uploads/1629459593.png"); */
+            margin: 20px 0px 20px 55px;
+            box-sizing: border-box;
+            padding-bottom:20px;
+            background-repeat: no-repeat; 
+            background-size: auto 200px ; 
+            background-position-y: 50px;
+            background-position-x: 35px;
+            
+           
+            
+        }
+   
+        
+        .container ul li:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        .container ul li .bottom {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: rgb(63, 66, 69);
+            text-align: center;
+            color: white;
+        }
+        
+        @media screen and (max-width:1300px) {
+            .container ul li {
+                width: 300px;
+                margin-left: 15%;
+                margin-bottom: 10%;
+            }
+        }
+        
+
+        @media screen and (max-width:1000px) {
+            .container ul li {
+                width: 300px;
+                margin-left: 15%;
+
+                margin-bottom: 10%;
+            }
+        }
+
+
+        .bottom {
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body style="background: #FFF;">
+    <!-- nav-bar -->
+    <nav>
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <img src="./NavBar/logo.png" class="logo" alt="logo" />
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+
+            <!-- links -->
+            <ul class="links">
+                <li>
+                    <a href="http://134.208.3.125/">home</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+
+            <!-- social media -->
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <ul>
+            <li id="Upload" style=" background-image: url('http://134.208.3.125/purePHP/uploadimage/uploads/1629459593.png');">
+                <div class="bottom" >Upload Image</div>
+            </li>
+    
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+            <li>
+                <div class="bottom">Heading</div>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+    <!-- javascript -->
+    <script src="./NavBar/navbar.js "></script>
+    <script>
+        const upload = document.querySelector("#Upload");
+        upload.addEventListener('click',function(){
+            window.location.href = 'http://134.208.3.125/purePHP/uploadimage/';
+        })
+    </script>
+</body>
+
+</html>
