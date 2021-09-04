@@ -137,6 +137,26 @@ p {
 }
 /*  global classes */
 
+.success {
+  background: #D4EDDA;
+  color: #40754C;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+  letter-spacing: 0.05rem;
+}
+
+.error {
+  background: #F2DEDE;
+   color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+  letter-spacing: 0.05rem;
+}
+
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -234,6 +254,7 @@ Grocery List
   font-family: var(--ff-secondary);
   color: var(--clr-grey-5);
 }
+.insert-btn,
 .submit-btn {
   background: var(--clr-primary-8);
   border-color: transparent;
@@ -250,15 +271,21 @@ Grocery List
   transition: var(--transition);
   font-size: 0.85rem;
 }
+.insert-btn{
+  background-color: red;
+}
 .submit-btn:hover {
   background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.insert-btn:hover {
+  background: pink;
   color: var(--clr-white);
 }
 
 .grocery-container {
   margin-top: 2rem;
   transition: var(--transition);
-  visibility: hidden;
 }
 .show-container {
   visibility: visible;
@@ -286,6 +313,7 @@ Grocery List
   letter-spacing: 2px;
   transition: var(--transition);
 }
+
 .edit-btn,
 .delete-btn {
   background: transparent;
@@ -294,6 +322,10 @@ Grocery List
   font-size: 0.7rem;
   margin: 0 0.15rem;
   transition: var(--transition);
+}
+
+.add-btn:hover {
+  color: var(--clr-green-dark);
 }
 .edit-btn {
   color: var(--clr-green-light);
@@ -307,6 +339,7 @@ Grocery List
 .delete-btn:hover {
   color: var(--clr-red-dark);
 }
+
 .clear-btn {
   text-transform: capitalize;
   width: 10rem;

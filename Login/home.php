@@ -2,7 +2,6 @@
 session_start(); // get the session variable
 
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-
  ?>
 <!DOCTYPE html>
 <html>

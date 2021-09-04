@@ -41,7 +41,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             $_SESSION['id'] = $row['id'];
 			$_SESSION['email'] = $row['email'];
 			if($row['verify']==1){
-				header("Location: ../Grocery/grocery.html");
+				header("Location: ../Grocery/grocery.php");
 				exit();
 			}
 			else{

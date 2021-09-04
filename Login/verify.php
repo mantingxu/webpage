@@ -72,6 +72,7 @@ if (isset($_POST['email'])) {
             // 
             $_SESSION['email'] = $email;
             $_SESSION['code'] = $verification_code;
+            $_SESSION['id'] = $id;
             $sql ="UPDATE users SET code='".$verification_code."' ,email='" .$email."'  WHERE id=$id";
             mysqli_query($conn, $sql);
             header("Location: email-verification.php");
